@@ -1,0 +1,12 @@
+.best-sell{
+    padding-top: $pdding-lg;
+    padding-bottom: $pdding-lg;
+    &__heading{
+        font-size: $main-heading;
+        font-weight: 700;
+    }
+    &__description{
+        color: $gray-600;
+        margin: $mr-md;
+    }
+}

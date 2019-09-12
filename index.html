@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,50 +8,571 @@
     <title>Daxone</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/fonts/slick.ttf">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
-    
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+<body>
+    <!-- Start Header  -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-1.png" class="img-fluid" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#daxoneNav"
+                    aria-controls="daxoneNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="daxoneNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Men</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pages</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> 2 Items</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            <div id="frmSlider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="frmSlider">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-6">
+                                    <div class="frmSlider__image">
+                                        <img src="img/slider/hm1-single-1.png" class="d-block w-100 img-fluid"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <div class="offset-md-1 col-md-6 col-sm-6">
+                                    <div class="frmSlider__details">
+                                        <h3>30% off</h3>
+                                        <h2>Comfort Chair</h2>
+                                        <h3>Collect from Daxone & get 30% Discount.</h3>
+                                        <a href="#" class="frmBtn frmBtn--primary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="frmSlider">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-6">
+                                    <div class="frmSlider__image">
+                                        <img src="img/slider/hm1-single-2.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="offset-md-1 col-md-6 col-sm-6">
+                                    <div class="frmSlider__details">
+                                        <h3>30% off</h3>
+                                        <h2>Comfort Chair</h2>
+                                        <h3>Collect from Daxone & get 30% Discount.</h3>
+                                        <a href="#" class="frmBtn frmBtn--primary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- End Header  -->
+
+
+    <!-- Start Banner Section  -->
+    <section class="frmBanner">
+        <div class="container">
+            <div class="frmBanner__details">
+                <div class="row">
+                    <div class="offset-lg-5 col-lg-5 text-right frmBanner__info col-sm-12">
+                        <h3 class="frmBanner__heading">Premium Home Decorator</h3>
+                        <a href="#" class="frmBanner__more">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
+    </section>
+
+    <!-- End Banner Section  -->
+    <!-- Start Best Sell Section  -->
+    <section class="best-sell">
+        <h3 class="best-sell__heading text-center">
+            Best Sell
+        </h3>
+        <p class="best-sell__description text-center">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the
+            industry's standard dummy text
+        </p>
+        <div class="best-sell__products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="frmProduct frm-marginB">
+                            <div class="frmProduct__image">
+                                <img src="img/products/pro-hm1-1.jpg" alt="product 1" class="frmProduct__image">
+                            </div>
+                            <div class="frmProduct__details">
+                                <h4 class="frm-margin">Chair</h4>
+                                <h3 class="link-hover">Golden Easy Spot Chair.</h3>
+                                <span class="frm-marginR frmProduct__new">400$</span>
+                                <span class="frm-marginR frmProduct__old">$430.00</span>
+                                <span class="frmProduct__cart">+ Add To Cart</span>
+                                <span class="frmBtn frmBtn--secondary frmProduct__discount">-30%</span>
+                                <span class="frmBtn frmBtn--secondary frmProduct__time">New</span>
+                            </div>
+                            <div class="frmProduct__actions">
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="far fa-heart"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="frmProduct frm-marginB">
+                            <div class="frmProduct__image">
+                                <img src="img/products/pro-hm1-2.jpg" alt="product 1" class="frmProduct__image">
+                            </div>
+                            <div class="frmProduct__details">
+                                <h4 class="frm-margin">Chair</h4>
+                                <h3 class="link-hover">Golden Easy Spot Chair.</h3>
+                                <span class="frm-marginR frmProduct__new">400$</span>
+                                <span class="frm-marginR frmProduct__old">$430.00</span>
+                                <span class="frmProduct__cart">+ Add To Cart</span>
+                                <span class="frmBtn frmBtn--secondary frmProduct__time">New</span>
+                            </div>
+                            <div class="frmProduct__actions">
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="far fa-heart"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 frm-marginB">
+                        <div class="frmProduct">
+                            <div class="frmProduct__image">
+                                <img src="img/products/pro-hm1-3.jpg" alt="product 1" class="frmProduct__image">
+                            </div>
+                            <div class="frmProduct__details">
+                                <h4 class="frm-margin">Chair</h4>
+                                <h3 class="link-hover">Golden Easy Spot Chair.</h3>
+                                <span class="frm-marginR frmProduct__new">400$</span>
+                                <span class="frm-marginR frmProduct__old">$430.00</span>
+                                <span class="frmProduct__cart">+ Add To Cart</span>
+                            </div>
+                            <div class="frmProduct__actions">
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="far fa-heart"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="frmProduct frm-marginB">
+                            <div class="frmProduct__image">
+                                <img src="img/products/pro-hm1-4.jpg" alt="product 1" class="frmProduct__image">
+                            </div>
+                            <div class="frmProduct__details">
+                                <h4 class="frm-margin">Chair</h4>
+                                <h3 class="link-hover">Golden Easy Spot Chair.</h3>
+                                <span class="frm-marginR frmProduct__new">400$</span>
+                                <span class="frm-marginR frmProduct__old">$430.00</span>
+                                <span class="frmProduct__cart">+ Add To Cart</span>
+                                <span class="frmBtn frmBtn--secondary frmProduct__time">New</span>
+                            </div>
+                            <div class="frmProduct__actions">
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="far fa-heart"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Best Sell Section  -->
+
+    <!-- Start Discount Section -->
+    <section class="frmDiscount">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-1 col-md-7">
+                    <div class="frmDiscount__image d-block mx-auto">
+                        <img src="img/banner-1.jpg" alt="dicount" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="frmDiscount__details">
+                        <p class="frmDiscount__text">
+                            Lorem Ipsum is simply dummy text of the<br>
+                            printing and typesetting industry.
+                        </p>
+                        <h3 class="frmDiscount__heading">
+                            Winter Discount<br>
+                            Up to 30%
+                        </h3>
+                        <p class="frmDiscount__desc">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout.
+                        </p>
+                        <a href="#" class="frmBtn frmBtn--primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Discount Section -->
+
+    <!-- Start Best Sell Section  -->
+    <section class="best-sell">
+        <h3 class="best-sell__heading text-center">
+            All Products
+        </h3>
+        <p class="best-sell__description text-center">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the
+            industry's standard dummy text
+        </p>
+        <div class="best-sell__products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="frmProduct frm-marginB">
+                            <div class="frmProduct__image">
+                                <img src="img/products/pro-hm1-1.jpg" alt="product 1" class="frmProduct__image">
+                            </div>
+                            <div class="frmProduct__details">
+                                <h4 class="frm-margin">Chair</h4>
+                                <h3 class="link-hover">Golden Easy Spot Chair.</h3>
+                                <span class="frm-marginR frmProduct__new">400$</span>
+                                <span class="frm-marginR frmProduct__old">$430.00</span>
+                                <span class="frmProduct__cart">+ Add To Cart</span>
+                                <span class="frmBtn frmBtn--secondary frmProduct__discount">-30%</span>
+                                <span class="frmBtn frmBtn--secondary frmProduct__time">New</span>
+                            </div>
+                            <div class="frmProduct__actions">
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="far fa-heart"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="frmProduct frm-marginB">
+                            <div class="frmProduct__image">
+                                <img src="img/products/pro-hm1-2.jpg" alt="product 1" class="frmProduct__image">
+                            </div>
+                            <div class="frmProduct__details">
+                                <h4 class="frm-margin">Chair</h4>
+                                <h3 class="link-hover">Golden Easy Spot Chair.</h3>
+                                <span class="frm-marginR frmProduct__new">400$</span>
+                                <span class="frm-marginR frmProduct__old">$430.00</span>
+                                <span class="frmProduct__cart">+ Add To Cart</span>
+                                <span class="frmBtn frmBtn--secondary frmProduct__time">New</span>
+                            </div>
+                            <div class="frmProduct__actions">
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="far fa-heart"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="frmProduct frm-marginB">
+                            <div class="frmProduct__image">
+                                <img src="img/products/pro-hm1-3.jpg" alt="product 1" class="frmProduct__image">
+                            </div>
+                            <div class="frmProduct__details">
+                                <h4 class="frm-margin">Chair</h4>
+                                <h3 class="link-hover">Golden Easy Spot Chair.</h3>
+                                <span class="frm-marginR frmProduct__new">400$</span>
+                                <span class="frm-marginR frmProduct__old">$430.00</span>
+                                <span class="frmProduct__cart">+ Add To Cart</span>
+                            </div>
+                            <div class="frmProduct__actions">
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="far fa-heart"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="frmProduct frm-marginB">
+                            <div class="frmProduct__image">
+                                <img src="img/products/pro-hm1-4.jpg" alt="product 1" class="frmProduct__image">
+                            </div>
+                            <div class="frmProduct__details">
+                                <h4 class="frm-margin">Chair</h4>
+                                <h3 class="link-hover">Golden Easy Spot Chair.</h3>
+                                <span class="frm-marginR frmProduct__new">400$</span>
+                                <span class="frm-marginR frmProduct__old">$430.00</span>
+                                <span class="frmProduct__cart">+ Add To Cart</span>
+                                <span class="frmBtn frmBtn--secondary frmProduct__time">New</span>
+                            </div>
+                            <div class="frmProduct__actions">
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="far fa-heart"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="frmProduct frm-marginB">
+                            <div class="frmProduct__image">
+                                <img src="img/products/pro-hm1-2.jpg" alt="product 1" class="frmProduct__image">
+                            </div>
+                            <div class="frmProduct__details">
+                                <h4 class="frm-margin">Chair</h4>
+                                <h3 class="link-hover">Golden Easy Spot Chair.</h3>
+                                <span class="frm-marginR frmProduct__new">400$</span>
+                                <span class="frm-marginR frmProduct__old">$430.00</span>
+                                <span class="frmProduct__cart">+ Add To Cart</span>
+                                <span class="frmBtn frmBtn--secondary frmProduct__discount">-30%</span>
+                                <span class="frmBtn frmBtn--secondary frmProduct__time">New</span>
+                            </div>
+                            <div class="frmProduct__actions">
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="far fa-heart"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="frmProduct frm-marginB">
+                            <div class="frmProduct__image">
+                                <img src="img/products/pro-hm1-3.jpg" alt="product 1" class="frmProduct__image">
+                            </div>
+                            <div class="frmProduct__details">
+                                <h4 class="frm-margin">Chair</h4>
+                                <h3 class="link-hover">Golden Easy Spot Chair.</h3>
+                                <span class="frm-marginR frmProduct__new">400$</span>
+                                <span class="frm-marginR frmProduct__old">$430.00</span>
+                                <span class="frmProduct__cart">+ Add To Cart</span>
+                                <span class="frmBtn frmBtn--secondary frmProduct__time">New</span>
+                            </div>
+                            <div class="frmProduct__actions">
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="far fa-heart"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="frmProduct">
+                            <div class="frmProduct__image">
+                                <img src="img/products/pro-hm1-4.jpg" alt="product 1" class="frmProduct__image">
+                            </div>
+                            <div class="frmProduct__details">
+                                <h4 class="frm-margin">Chair</h4>
+                                <h3 class="link-hover">Golden Easy Spot Chair.</h3>
+                                <span class="frm-marginR frmProduct__new">400$</span>
+                                <span class="frm-marginR frmProduct__old">$430.00</span>
+                                <span class="frmProduct__cart">+ Add To Cart</span>
+                            </div>
+                            <div class="frmProduct__actions">
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="far fa-heart"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="frmProduct frm-marginB">
+                            <div class="frmProduct__image">
+                                <img src="img/products/pro-hm1-1.jpg" alt="product 1" class="frmProduct__image">
+                            </div>
+                            <div class="frmProduct__details">
+                                <h4 class="frm-margin">Chair</h4>
+                                <h3 class="link-hover">Golden Easy Spot Chair.</h3>
+                                <span class="frm-marginR frmProduct__new">400$</span>
+                                <span class="frm-marginR frmProduct__old">$430.00</span>
+                                <span class="frmProduct__cart">+ Add To Cart</span>
+                                <span class="frmBtn frmBtn--secondary frmProduct__time">New</span>
+                            </div>
+                            <div class="frmProduct__actions">
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-plus"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="far fa-heart"></i></a>
+                                <a href="#" class="frmBtn frmBtn--secondary-2"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer__social">
+                        <img src="img/logo-1.png" alt="logo">
+                        <p>Follow Us:</p>
+                        <div class="footer__icons">
+                            <p><i class="fab fa-facebook-f"></i></p>
+                            <p><i class="fab fa-twitter"></i></p>
+                            <p><i class="fab fa-pinterest"></i></p>
+                            <p><i class="fab fa-vimeo-v"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-2 col-md-6">
+                    <div class="footer__section">
+                        <h4 class="footer__heading">
+                            USEFUL LINK
+                        </h4>
+                        <div class="footer__links">
+                            <a href="#">Shopping Cart</a>
+                            <a href="#">WIshlist </a>
+                            <a href="#">Checkout</a>
+                            <a href="#">Support</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-2 col-md-6">
+                    <div class="footer__section">
+                        <h4 class="footer__heading">
+                            ABOUT US
+                        </h4>
+                        <div class="footer__links">
+                            <a href="#">About</a>
+                            <a href="#">Products</a>
+                            <a href="#">Terms and conditions</a>
+                            <a href="#">Help Center</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-3 col-md-6">
+                    <div class="footer__section">
+                        <h4 class="footer__heading">
+                            NEWSLETTER
+                        </h4>
+                        <p class="footer__desc">Subscribe to get all new updates</p>
+                        <div class="footer__subscribe">
+                            <div class="form-group">
+                                <input type="text" name="subMail" class="form-control" placeholder="Enter Your email">
+                                <button type="button" class="frmBtn frmBtn--primary">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+<!-- 
+    <a href="#" class="frmBtn frmBtn--primary">shop now</a>
+
+
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-3 col-md-6">
+                <div class="slider-for">
+                    <img src="img/products/pro-hm1-1.jpg" class="img-fluid" alt="">
+                    <img src="img/products/pro-hm1-2.jpg" class="img-fluid" alt="">
+                    <img src="img/products/pro-hm1-3.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="slider-nav">
+                    <img src="img/products/pro-hm1-1.jpg" alt="">
+                    <img src="img/products/pro-hm1-2.jpg" alt="">
+                    <img src="img/products/pro-hm1-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true
+            });
+        });
+    </script>
 </body>
+
 </html>

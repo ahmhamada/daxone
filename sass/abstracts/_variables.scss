@@ -4,4 +4,54 @@
 
 
 
-$test: #EEE;
+// Colors
+
+$white:#FFF;
+$color-primary: #FF5252;
+$color-secondary: #7c5e48;
+$color-secondary-2: #373737;
+
+
+//grays
+$gray-100: #F7F7F7;
+$gray-200: rgb(228, 227, 227);
+$gray-300: #BCBCBC;
+$gray-400: #999;
+$gray-500: #f8f8f8;
+$gray-600: #777;
+$gray-800: #212529;
+$gray-900: #444;
+$gray-1000:#101214;
+$black : #000;
+
+
+//borders
+
+$border-primary: 1px solid $color-primary;
+
+
+// padding
+$pdR: 1.1rem;
+$pdL: 0.8rem;
+$pdT: 2rem;
+$pdB: 1rem;
+
+$pdding-lg: 2.5rem;
+$pdding-xs: 0.2rem;
+$pdding-eq: 1.5rem;
+
+// margins
+$mr-lg: 2rem auto;
+$mr-md: 1rem auto 2rem auto;
+$mr-eq: 1.8rem auto 1.8rem auto;
+
+//headings
+$main-heading: 2.3rem;
+
+
+// Social Colors
+
+$facebook_color           : hsla(222, 47%, 40%, 1);     // #365397
+$twitter_color            : hsla(198, 100%, 47%, 1);    // #00a9f1
+$vimeo_color              : hsla(200, 82%, 61%, 1);     // #48b6ed
+$pinterest_color          : hsla(0, 78%, 45%, 1);       // #ce1a19

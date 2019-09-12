@@ -1,0 +1,27 @@
+/* Vendor Prefix */
+
+@mixin prefix($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+/* Hovering */
+@mixin hvr-with-twoColors($primary,$back) {
+  color: $primary;
+  background-color: $back;
+  &:hover{
+    color: $back;
+    background-color: $primary;
+  }
+}
+
+/* hovering with one color */
+@mixin hvr-with-oneColor($primary,$hover){
+  @include prefix(transition, all 0.5s ease-in-out, webkit moz o);
+  color: $primary;
+  &:hover{
+    color: $hover
+  }
+}

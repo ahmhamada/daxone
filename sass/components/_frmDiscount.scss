@@ -1,0 +1,38 @@
+.frmDiscount{
+    padding-top: $pdding-lg;
+    padding-bottom: $pdding-lg;
+    &__image{
+        @include prefix(box-shadow,-80px -37px 0px 0px #ff525211, webkit moz o);   
+    }
+
+    &__details{
+        margin: 0;
+        position: relative;
+        top: 50%;
+        @include prefix(transform,translateY(-50%), webkit moz o);          
+        @media (max-width: 768px) {
+            text-align: center;
+        } 
+    }
+
+    &__text{
+        color: $gray-600;
+        @media (max-width: 768px) {
+            margin-top: 1rem;
+         }
+
+    }
+    &__heading{
+        font-size: $main-heading;
+        font-weight: bold;
+        margin: $mr-eq;
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+            font-size: 1.7rem;   
+        }
+
+    }
+    &__desc{
+        color: $gray-600;
+    }
+
+}

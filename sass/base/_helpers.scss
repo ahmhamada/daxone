@@ -1,0 +1,15 @@
+.link-hover{
+    @include hvr-with-oneColor($color-secondary,$color-primary);
+}    
+
+.frm-margin{
+    margin: 0.7rem 0 0.4rem 0;
+}
+
+.frm-marginR{
+    margin-right: 2rem;
+}
+
+.frm-marginB{
+    margin-bottom: 1rem;
+}

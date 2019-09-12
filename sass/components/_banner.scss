@@ -1,0 +1,40 @@
+.frmBanner{
+    padding-top: $pdding-lg;
+    padding-bottom: $pdding-lg;
+
+    &__details{
+        background-image: url('../../img/banner-bg-1.jpg'); 
+        min-height: 21rem;
+        @include prefix(background-repeat, no-repeat, webkit moz o);
+        @include prefix(background-size, cover, webkit moz o);
+        position: relative;
+    }
+    &__heading{
+        font-size: 3rem;
+        color: $color-secondary;
+    }
+    &__more{
+        @include hvr-with-oneColor($color-secondary,$color-primary);
+    }
+    &__info{
+        position: absolute;
+        top: 50%;
+        left: auto;
+        @include prefix(transform, translateY(-50%), webkit moz o);
+    }
+    @media (max-width: 991px) { 
+        &__heading {
+            font-size: 2rem;
+        }
+    } 
+    @media (max-width: 767px) { 
+        &__heading {
+            font-size: 2rem;
+            @include prefix(text-shadow, 1px 1px 1px #0c0c0c, webkit moz o);
+        }
+        &__more{
+            @include prefix(text-shadow, 1px 1px 1px #0c0c0c, webkit moz o);    
+        }    
+    }
+    
+}

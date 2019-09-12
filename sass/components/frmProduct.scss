@@ -1,0 +1,59 @@
+.frmProduct{
+    background-color: $white;    
+    position: relative;
+    margin: 1rem auto 2rem auto;
+    overflow: hidden;
+    @include prefix(transition, all 0.5s ease-in-out, webkit moz o);
+    &__image{
+        max-width: 100%;
+        cursor: pointer;
+
+    }
+
+    &__details{
+        > h3{
+            @include prefix(transition, all 0.5s ease-in-out, webkit moz o);
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold; 
+        }
+    }
+    &__new{
+        color: $color-secondary-2;
+        font-size: 1rem;
+        font-weight: 600;
+        }
+    &__old{
+            font-size: 0.9rem;
+            text-decoration: line-through;
+        }
+    &__cart{
+        @include hvr-with-oneColor($color-primary,$color-primary);
+        font-weight: bold;
+        font-size: 0.8rem
+    }
+    &__time{
+        position: absolute;
+        top: 0.7rem;
+        left: 0.2rem;
+    }
+    &__discount{
+        position: absolute;
+        top: 0.7rem;
+        right: 0.2rem
+    }
+    &__cart{
+        position: absolute;
+        bottom: 0px;
+        right: -78px;
+    }
+
+    &__actions{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        bottom: 110px;
+        left: -40px;
+    }
+
+}
